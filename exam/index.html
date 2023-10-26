@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: tomato;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: tomato;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>RVS COLLGE OF ARTS AND SCIENCE</h2>
+<p> we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+
+
+<header>
+   
+  <h2>RVS COLLEGE OF ARTS AND SCIENCE</h2>
+<a class="active" href="https://www.rvscas.ac.in/">Home</a>
+  <a href="#about">about</a>
+  <a href="https://rvscas.ac.in/contact">Contact</a>
+  <a href="https://www.collegebatch.com/2321-rvs-college-of-arts-and-science-contact-number-address-map-coimbatore">location</a>
+</div>
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li>RVS COLLEGE WEBSITE LINK: </li>
+<li><a href="https://www.rvscas.ac.in/">ARTS</a></li>
+      <img src="rvs.jpg" alt="Arts" style="width: 85px;height: 85px;">
+      <li><a href="https://www.rvscollege.ac.in/">ENGINEERNING</a></li>
+      <img src="tenchnology.jpg" alt="Arts" style="width: 85px;height: 85px;">
+      <li><a href="https://www.rvspacp.ac.in/">PHARMACY</a></li>
+      <img src="medical.jpg" alt="Arts" style="width: 85px;height: 85px;">
+      </ul>
+  </nav>
+  <article>
+    <img src="logo.jpg">
+    <h1>About RVS COLLEGE:</h1>
+    <p>RVS College of Arts and Science (RVS CAS) is an ISO 9001:2000 certified institute in Coimbatore, Tamil Nadu, India. It is established in the year 1986. </p>
+    <p>The college is affiliated to Bharathiar University, Coimbatore. The campus is located adjacent to the Coimbatore-Trichy highway at Sulur.</p>
+  </article>
+</section>
+<footer>
+    <img src="map.jpg" alt="Arts" style="width: 45px;height:45px;">
+      <p>Contact Details
+        Phone: 0422 2687 421/480/603
+        Email: info@rvsgroup.com
+        
+        Location:
+        242, Trichy Road,
+        Sulur,
+        Coimbatore – 641 402.
+        Tamilnadu,
+        South India</p>
+  <p>Footer</p>
+</footer>
+</body>
+</html>
+
